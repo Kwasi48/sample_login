@@ -63,7 +63,16 @@ class _SignUpState extends State<SignUp> {
                                 textStyle: TextStyle(fontSize: 16)),
                           )
                         ],
-                      ))
+                      )),
+                  SizedBox(height: 36,),
+                   Row(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      Text('No account? Just '),
+                      SizedBox(height: 8,),
+                      TextButton(onPressed: (){}, child: Text('Sign up here'))
+                    ],
+                  )
                 ],
               ))
             ],
