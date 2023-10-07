@@ -57,10 +57,13 @@ class _SignUpState extends State<SignUp> {
                       child: Row(
                         mainAxisSize: MainAxisSize.min,
                         children: [
-                          Text(
-                            'login',
-                            style: GoogleFonts.alike(
-                                textStyle: TextStyle(fontSize: 16)),
+                          Padding(
+                            padding: const EdgeInsets.all(16.0),
+                            child: Text(
+                              'login',
+                              style: GoogleFonts.alike(
+                                  textStyle: TextStyle(fontSize: 16,)),
+                            ),
                           )
                         ],
                       )),
