@@ -9,19 +9,65 @@ class SignUp extends StatefulWidget {
 }
 
 class _SignUpState extends State<SignUp> {
+  TextEditingController controller = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Column(
-          children: <Widget>[
-            Padding(
-              padding: const EdgeInsets.all(16),
-              child: Text('Welcome to FitMax',
-              style: GoogleFonts.alike(textStyle: const TextStyle(fontSize: 24,)),),
-            ),
-
-          ],
+        child: Center(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: <Widget>[
+              Padding(
+                padding: const EdgeInsets.all(24),
+                child: Text(
+                  'Welcome to FitMax',
+                  style: GoogleFonts.alike(
+                      textStyle: const TextStyle(
+                    fontSize: 24,
+                  )),
+                ),
+              ),
+              const Image(
+                  image: AssetImage(
+                'assets/rive.png',
+              )),
+              Form(
+                  child: Column(
+                children: [
+                  TextFormField(
+                    decoration: const InputDecoration(
+                        icon: Icon(Icons.account_circle),
+                        labelText: 'Name *',
+                        hintText: 'Please enter your name'),
+                  ),
+                  const SizedBox(
+                    height: 24,
+                  ),
+                  TextFormField(
+                    decoration: const InputDecoration(
+                        icon: Icon(Icons.account_circle),
+                        labelText: 'Password*',
+                        hintText: 'Please enter your password'),
+                  ),
+                  SizedBox(height: 36,),
+                  ElevatedButton(
+                      onPressed: () {},
+                      child: Row(
+                        mainAxisSize: MainAxisSize.min,
+                        children: [
+                          Text(
+                            'login',
+                            style: GoogleFonts.alike(
+                                textStyle: TextStyle(fontSize: 16)),
+                          )
+                        ],
+                      ))
+                ],
+              ))
+            ],
+          ),
         ),
       ),
     );
