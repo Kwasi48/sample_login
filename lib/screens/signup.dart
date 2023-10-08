@@ -47,7 +47,7 @@ class _SignUpState extends State<SignUp> {
                   ),
                   TextFormField(
                     decoration: const InputDecoration(
-                        icon: Icon(Icons.account_circle),
+                        icon: Icon(Icons.key_rounded),
                         labelText: 'Password*',
                         hintText: 'Please enter your password'),
                   ),
