@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:sample_login/screens/home.dart';
 
 class SignUp extends StatefulWidget {
   const SignUp({super.key});
@@ -53,7 +54,9 @@ class _SignUpState extends State<SignUp> {
                   ),
                   SizedBox(height: 36,),
                   ElevatedButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => const HomeScreen(),));
+                      },
                       child: Row(
                         mainAxisSize: MainAxisSize.min,
                         children: [
