@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:sample_login/view/home.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 
 class SignUp extends StatefulWidget {
   const SignUp({super.key});
@@ -24,6 +25,14 @@ class signwidget extends StatelessWidget {
   const signwidget({
     super.key,
   });
+  
+  
+  Future testData() async {
+    FirebaseFirestore db = FirebaseFirestore.instance;
+    var data = await db.collection('todo').get();
+    var details = data.docs.toList();
+    details.forEach((element) {print(element.id);});
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -105,6 +114,7 @@ class signwidget extends StatelessWidget {
                         onPressed: () {
                           Scaffold.of(context).showBottomSheet(
                               (context) => Text('hello Welcome'));
+                          testData();
                         },
                         child: Text('Sign up here'))
                   ],
