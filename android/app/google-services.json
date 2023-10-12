@@ -7,6 +7,25 @@
   "client": [
     {
       "client_info": {
+        "mobilesdk_app_id": "1:199654156773:android:dd73a0abea7bd3ce45a70c",
+        "android_client_info": {
+          "package_name": "com.example.sample_login"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_B2nLFAAqw6xdcX-Ihpu9esOaG2m_MX4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
         "mobilesdk_app_id": "1:199654156773:android:e6c5e29c1e37caad45a70c",
         "android_client_info": {
           "package_name": "it.fitmax.fitmaxapp"
