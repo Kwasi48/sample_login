@@ -2,7 +2,7 @@ plugins {
     //id "it.ftimax.fitmaxapp
     id "com.android.application"
     id "kotlin-android"
-    //id "dev.flutter.flutter-gradle-plugin"
+    id "dev.flutter.flutter-gradle-plugin"
     id 'com.google.gms.google-services'
 }
 
@@ -25,7 +25,7 @@ if (flutterVersionName == null) {
 }
 
 android {
-    namespace "com.example.sample_login"
+    namespace "it.ftimax.fitmaxapp"
     compileSdkVersion flutter.compileSdkVersion
     ndkVersion flutter.ndkVersion
 
