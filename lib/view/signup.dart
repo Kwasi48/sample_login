@@ -9,8 +9,17 @@ class SignUp extends StatefulWidget {
 }
 
 class _SignUpState extends State<SignUp> {
+  TextEditingController controller_signup = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return SafeArea(child: Center(
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: <Widget>[
+          
+        ],
+      ),
+    ));
   }
 }
