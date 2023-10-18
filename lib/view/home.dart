@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sample_login/view/signup.dart';
+import 'package:sample_login/view/login.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -17,7 +17,7 @@ class HomeScreen extends StatelessWidget {
             ElevatedButton(
                 onPressed: () {
                   Navigator.pop(context,
-                      MaterialPageRoute(builder: (context) => const SignUp()));
+                      MaterialPageRoute(builder: (context) => const SignIn()));
                 },
                 child: Text(('Move Back')))
           ],

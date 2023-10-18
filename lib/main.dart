@@ -1,7 +1,7 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
 import 'package:flutter/material.dart';
-import 'package:sample_login/view/signup.dart';
+import 'package:sample_login/view/login.dart';
 
 void main() async  {
   WidgetsFlutterBinding.ensureInitialized();
@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData.light(useMaterial3: true),
-      home: SignUp(),
+      home: SignIn(),
     );
   }
 }
