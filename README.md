@@ -1,5 +1,5 @@
 # sample_login
 
 
-## Web Application for a a wellness Company.
+## Web Application for a wellness Company (FitMax).
 
