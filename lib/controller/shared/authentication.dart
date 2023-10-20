@@ -12,9 +12,18 @@ class Authentication{
     return user!.uid;
   }
 
-  Future<String> SignUp (String email,String password) async {
+  Future<String> signUp (String email,String password) async {
     UserCredential userCredential = await _firebaseAuth.createUserWithEmailAndPassword(email: email, password: password);
     User? user = userCredential.user;
     return user!.uid;
+  }
+
+  Future<void> signOut () async {
+    return _firebaseAuth.signOut();
+  }
+
+  Future<User> getUser () async {
+    User user = _firebaseAuth.currentUser!;
+    return user;
   }
 }
